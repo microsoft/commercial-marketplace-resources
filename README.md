@@ -1,57 +1,31 @@
-# Project Name
+# Microsoft Commercial Marketplace samples index
 
-(short, 1-3 sentenced, description of the project)
+This is a list of repositories of samples we find useful in understanding Microsoft Commercial Marketplace concepts. Please submit a pull request if there is a sample you have developed, or find that you think that may benefit the community.
 
-## Features
+## SaaS offers
 
-This project framework provides the following features:
+### Basic integration and manual onboarding sample (a.k.a. Contoso sample)
+Some solutions require out-of-band or manual on-boarding steps, such as validating a customer, running scripts manually for deploying resources needed for a new customer etc. This sample uses email notifications for a new customer, or any changes on the subscription status made outside of the solution code.
 
-* Feature 1
-* Feature 2
-* ...
+[GitHub repo](https://github.com/Azure-Samples/Commercial-Marketplace-SaaS-Manual-On-Boarding)
 
-## Getting Started
+## Azure application offers - Azure managed applications
 
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+### Custom metering, retrieving "resourceId" for a subscription
 
 
-## Demo
 
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
+## Azure virtual machine offers
 
 ## Resources
 
-(Any additional resources or related projects)
+- Azure virtual machine offers
+  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-virtual-machines)
+  - [Technical assets](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
+- Azure application offers - Azure managed applications
+  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
 
-- Link to supporting information
-- Link to similar sample
-- ...
+- SaaS offers
+  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
+  - [Fulfillment APIs version 2 reference](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2)
+- [Marketplace metering service API reference](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/marketplace-metering-service-apis)
