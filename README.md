@@ -7,7 +7,7 @@ This is a list of repositories of samples we find useful in understanding Micros
 ### Basic integration and manual onboarding sample (a.k.a. Contoso sample)
 Some solutions require out-of-band or manual on-boarding steps, such as validating a customer, running scripts manually for deploying resources needed for a new customer etc. This sample uses email notifications for a new customer, or any changes on the subscription status made outside of the solution code.
 
-[contoso sample](https://github.com/Azure-Samples/Commercial-Marketplace-SaaS-Manual-On-Boarding)
+[GitHub repo](https://github.com/Azure-Samples/Commercial-Marketplace-SaaS-Manual-On-Boarding)
 
 ## Azure application offers - Azure managed applications
 
