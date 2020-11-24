@@ -1,57 +1,50 @@
-# Project Name
+# Microsoft Commercial Marketplace samples index
 
-(short, 1-3 sentenced, description of the project)
+This is a list of repositories of samples we find useful in understanding Microsoft Commercial Marketplace concepts. Please submit a pull request if there is a sample you have developed, or find that you think that may benefit the community by adding a section under the relevant offer type with a short description and a link to the sample repo.
 
-## Features
+## SaaS offers
 
-This project framework provides the following features:
+### Clients for Fulfillment and Metering APIs
 
-* Feature 1
-* Feature 2
-* ...
+We are using an Open API Specification (OAS) document (previously known as Swagger) for generating open source community API clients targeting different programming languages. Currently the following are available (all in preview).
 
-## Getting Started
+- OAS document for Fulfillment API v2 and Metering service API, https://github.com/azure/commercial-marketplace-openapi 
+- Client library for .NET, https://github.com/Azure/commercial-marketplace-client-dotnet
+- Client library for Java, https://github.com/Azure/commercial-marketplace-client-java
+- Client library for Python (coming soon), https://github.com/Azure/commercial-marketplace-sdk-python
+- Client library for Node.js (coming soon), https://github.com/Azure/commercial-marketplace-sdk-node
+- Client library for Go (coming soon), https://github.com/Azure/commercial-marketplace-sdk-go
 
-### Prerequisites
+### Basic integration and manual onboarding sample (a.k.a. Contoso sample)
+Some solutions require out-of-band or manual on-boarding steps, such as validating a customer, running scripts manually for deploying resources needed for a new customer etc. This sample uses email notifications for a new customer, or any changes on the subscription status made outside of the solution code.
 
-(ideally very short, if any)
+[GitHub repo](https://github.com/Azure-Samples/Commercial-Marketplace-SaaS-Manual-On-Boarding)
 
-- OS
-- Library version
-- ...
+### Sample for customer and subscription management (a.k.a. SaaS SDK)
+This sample along with its API client library was released during the Microsoft Build in 2020. It demonstrates an approach for managing customers and subscriptions, along with implementing the protocol for managing the lifetime of a SaaS offer subscription using the Fulfillment APIs.
 
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+[GitHub repo](https://github.com/Azure/Microsoft-commercial-marketplace-transactable-SaaS-offer-SDK)
 
 
-## Demo
+## Azure application offers - Azure managed applications
 
-A demo app is included to show how to use the project.
+### Custom metering, retrieving "resourceId" for a subscription
+There are multiple approaches when a managed application needs to post usage to metering service. This set of notes and samples go through those approaches, and explain the relationship between them.
 
-To run the demo, follow these steps:
+[GitHub repo](https://github.com/Azure-Samples/commercial-marketplace-managed-application-metering-samples)
 
-(Add steps to start up the demo)
 
-1.
-2.
-3.
+## Azure virtual machine offers
 
-## Resources
+## References
 
-(Any additional resources or related projects)
+- Azure virtual machine offers
+  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-virtual-machines)
+  - [Technical assets](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
+- Azure application offers - Azure managed applications
+  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
 
-- Link to supporting information
-- Link to similar sample
-- ...
+- SaaS offers
+  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
+  - [Fulfillment APIs version 2 reference](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2)
+- [Marketplace metering service API reference](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/marketplace-metering-service-apis)
