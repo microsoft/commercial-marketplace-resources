@@ -11,7 +11,7 @@ We are using an Open API Specification (OAS) document (previously known as Swagg
 - OAS document for Fulfillment API v2 and Metering service API, https://github.com/azure/commercial-marketplace-openapi 
 - Client library for .NET, https://github.com/Azure/commercial-marketplace-client-dotnet
 - Client library for Java, https://github.com/Azure/commercial-marketplace-client-java
-- Client library for Python (coming soon), https://github.com/Azure/commercial-marketplace-sdk-python
+- Client library for Python, https://github.com/Azure/commercial-marketplace-client-python, [PyPi](https://pypi.org/project/azuremarketplace/)
 - Client library for Node.js (coming soon), https://github.com/Azure/commercial-marketplace-sdk-node
 - Client library for Go (coming soon), https://github.com/Azure/commercial-marketplace-sdk-go
 
@@ -35,6 +35,9 @@ There are multiple approaches when a managed application needs to post usage to 
 
 
 ## Azure virtual machine offers
+
+## Azure CRM Integration samples
+- [HubSpot Integration](https://github.com/santhoshb-msft/amp-leadgen2hubspot)
 
 ## References
 
