@@ -36,7 +36,7 @@ There are multiple approaches when a managed application needs to post usage to 
 
 ## Azure virtual machine offers
 
-## Azure CRM Integration samples
+## Lead management integration samples
 - [HubSpot Integration](https://github.com/santhoshb-msft/amp-leadgen2hubspot)
 
 ## References
