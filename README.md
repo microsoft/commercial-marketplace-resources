@@ -39,7 +39,7 @@ There are multiple approaches when a managed application needs to post usage to 
 ## Lead management integration samples
 - [HubSpot Integration](https://github.com/santhoshb-msft/amp-leadgen2hubspot)
 
-## References
+## References and resources
 
 - Azure virtual machine offers
   - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-virtual-machines)
