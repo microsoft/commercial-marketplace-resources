@@ -44,8 +44,10 @@ There are multiple approaches when a managed application needs to post usage to 
 - Azure virtual machine offers
   - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-virtual-machines)
   - [Technical assets](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
+  - [Simple Azure Marketplace Virtual Machine Offer: creating VM images and publishing in Partner Center](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/simple-azure-marketplace-virtual-machine-offer-creating-vm/ba-p/2058093)
 - Azure application offers - Azure managed applications
   - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
+  - [Simple Azure Managed Application: creating, testing, and publishing in Partner Center](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/simple-azure-managed-application-creating-testing-and-publishing/ba-p/2071773)
 
 - SaaS offers
   - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
