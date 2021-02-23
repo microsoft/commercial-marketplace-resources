@@ -21,7 +21,7 @@ Some solutions require out-of-band or manual on-boarding steps, such as validati
 
 [GitHub repo](https://github.com/microsoft/Commercial-Marketplace-SaaS-Manual-On-Boarding)
 
-### Single Page Application sample demonstrating Azure Active Directory Single Sign on on the client side
+### Single Page Application sample demonstrating client side Azure Active Directory Single Sign on
 
 This sample addresses a very narrow case to demonstrate the AAD SSO on the client side, with a server side component calling the marketplace APIs.
 
