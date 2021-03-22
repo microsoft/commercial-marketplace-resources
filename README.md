@@ -20,7 +20,7 @@ We are using an Open API Specification (OAS) document (previously known as Swagg
 - Client library for .NET, https://github.com/microsoft/commercial-marketplace-client-dotnet
 - Client library for Java, https://github.com/microsoft/commercial-marketplace-client-java
 - Client library for Python, https://github.com/microsoft/commercial-marketplace-client-python, [PyPi](https://pypi.org/project/azuremarketplace/)
-- Client library for Node.js (coming soon), https://github.com/microsoft/commercial-marketplace-sdk-node
+- Client library for Node.js, https://github.com/microsoft/commercial-marketplace-client-node, [NPMJS- Metering](https://www.npmjs.com/package/microsoft.marketplace.metering), [NPMJS- SaaS](https://www.npmjs.com/package/microsoft.marketplace.saas)
 - Client library for Go (coming soon), https://github.com/microsoft/commercial-marketplace-sdk-go
 
 ### Basic integration and manual onboarding sample (a.k.a. Contoso sample)
