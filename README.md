@@ -59,6 +59,12 @@ There are multiple approaches when a managed application needs to post usage to 
 
 ## References and resources
 
+- General
+  - [Glossary of commercial marketplace terminology](https://www.azurecitadel.com/marketplace/introduction/terminology/)
+  - [Overview of transactable offer types](https://www.azurecitadel.com/marketplace/introduction/offertypes/)
+  - [How to enroll in Partner Center for offer publishing](https://www.azurecitadel.com/marketplace/partnercenter/)
+  - [How to determine the appropriate offer type](https://www.azurecitadel.com/marketplace/offertype/)
+
 - Azure virtual machine offers
   - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-virtual-machines)
   - [Technical assets](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
