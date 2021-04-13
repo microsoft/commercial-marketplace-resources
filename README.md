@@ -53,6 +53,10 @@ There are multiple approaches when a managed application needs to post usage to 
 
 ## Azure virtual machine offers
 
+This sample shows how to build a Virtual Machine for Linux or Windows and demonstrates the basic steps required to make the image ready for the Microsoft Commercial Marketplace.
+
+[GitHub repo](https://github.com/microsoft/commerical-marketplace-vm-sample)
+
 ## Lead management integration samples
 
 - [HubSpot Integration](https://github.com/santhoshb-msft/amp-leadgen2hubspot)
