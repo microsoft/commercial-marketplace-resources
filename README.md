@@ -51,6 +51,12 @@ There are multiple approaches when a managed application needs to post usage to 
 
 [GitHub repo](https://github.com/microsoft/commercial-marketplace-managed-application-metering-samples)
 
+### Using a secret from the publisher's Azure Key Vault
+
+There are scenarios when the publisher wants to share a secret during the deployment of a Managed Application. This sample demonstrates a technique sharing secrets during the deployment.
+
+[GitHub repo](https://github.com/arsenvlad/azure-managed-app-publisher-secret)
+
 ## Azure virtual machine offers
 
 This sample shows how to build a Virtual Machine for Linux or Windows and demonstrates the basic steps required to make the image ready for the Microsoft Commercial Marketplace.
