@@ -13,12 +13,12 @@
   
 ## Instructional Videos
 
-The first two videos are meant to be consumed as a pair. Both are described in [this blog post](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/simple-azure-managed-application-creating-testing-and-publishing/ba-p/2071773). The first focuses on developing an Azure Managed Applicaiton and the second looks at pubishing it as a transactable offer in the Azure Marketplace. 
+The first two videos are meant to be consumed as a pair. Both are described in [this blog post](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/simple-azure-managed-application-creating-testing-and-publishing/ba-p/2071773). The first focuses on developing an Azure Managed Application and the second looks at publishing it as a transactable offer in the Azure Marketplace. 
 
 1. [Creating and testing a simple Azure Managed Application in the developer’s Azure subscription](https://www.youtube.com/watch?v=eCGFmUirLGU)
 2. [Publishing Azure Managed App in Partner Center and testing in end-customer’s Azure subscription](https://www.youtube.com/watch?v=3ODHzEjomro)
 
-[Mastering Azure Managed Applications](https://www.youtube.com/playlist?list=PLmsFUfdnGr3xpz1Q1ExBxj2Dk_dWqzGB6) is an 18-part instructional video series. It is a recording of a full day hands-on workshop held May 11, 2021. The workshop videos have been organized into logical modules to make each one short and digestable, with a specific focus. This is a 100-400 level workshop, so most of your questions about Azure Managed Applications should be answered in this video series. [The labs conducted in the training](http://aka.ms/AMAWorkshopLabs) are available for you to use at anytime.
+[Mastering Azure Managed Applications](https://www.youtube.com/playlist?list=PLmsFUfdnGr3xpz1Q1ExBxj2Dk_dWqzGB6) is an 18-part instructional video series. It is a recording of a full day hands-on workshop held May 11, 2021. The workshop videos have been organized into logical modules to make each one short and digestible, with a specific focus. This is a 100-400 level workshop, so most of your questions about Azure Managed Applications should be answered in this video series. [The labs conducted in the training](http://aka.ms/AMAWorkshopLabs) are available for you to use at anytime.
 
 ## Webinars
 
