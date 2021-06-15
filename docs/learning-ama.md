@@ -1,5 +1,23 @@
 # Azure Managed Application Learning Resources
 
+**Table of Contents**
+
+- [Key Documentation](#key-documentation)
+- [Instructional Videos](#instructional-videos)
+- [Recorded webinars](#webinars)
+
+## Key Documentation
+
+  - [Plan an Azure Application offer for the commercial marketplace](https://docs.microsoft.com/en-us/azure/marketplace/plan-azure-application-offer)
+  - [Publishing guide for Azure managed applications](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
+  
+## Instructional Videos
+
+The first two videos are meant to be consumed as a pair. Both are described in [this blog post](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/simple-azure-managed-application-creating-testing-and-publishing/ba-p/2071773). The first focuses on developing an Azure Managed Applicaiton and the second looks at pubishing it as a transactable offer in the Azure Marketplace. 
+
+1. [Creating and testing a simple Azure Managed Application in the developer’s Azure subscription](https://www.youtube.com/watch?v=eCGFmUirLGU)
+2. [Publishing Azure Managed App in Partner Center and testing in end-customer’s Azure subscription](https://www.youtube.com/watch?v=3ODHzEjomro)
+
 ## Webinars
 
 > Technical webinars for the Azure Marketplace are conducted every 2 weeks. You may [sign up for a live session here](https://microsoftcloudpartner.eventbuilder.com/MarketplaceDeveloperOfficeHours).

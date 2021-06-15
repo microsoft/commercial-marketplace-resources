@@ -1,5 +1,17 @@
 # SaaS Offer Learning Resources
 
+**Table of Contents**
+
+- [Key Documentation](#key-documentation)
+- [Recorded webinars](#webinars)
+
+## Key Documentation
+
+- [How to plan a SaaS offer for the commercial marketplace](https://docs.microsoft.com/en-us/azure/marketplace/plan-saas-offer)
+- [Build the landing page for your transactable SaaS offer in the commercial marketplace](https://docs.microsoft.com/en-us/azure/marketplace/azure-ad-transactable-saas-landing-page)
+- [SaaS fulfillment APIs version 2 in the commercial marketplace](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2)
+- [Metered billing for SaaS using the commercial marketplace metering service](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/saas-metered-billing)
+
 ## Webinars
 
 > Technical webinars for the Azure Marketplace are conducted every 2 weeks. You may [sign up for a live session here](https://microsoftcloudpartner.eventbuilder.com/MarketplaceDeveloperOfficeHours): 

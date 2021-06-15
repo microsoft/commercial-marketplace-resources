@@ -8,7 +8,7 @@ If you are here, you may also be interested in Partner Center training. We have 
 - [Business office hours](https://aka.ms/MarketplaceOfficeHours)
 - [Developer office hours](https://aka.ms/MarketplaceDeveloperOfficeHours)
 
-Check out the [online training section](#online-training) to review suggested recordings for various topics.
+Check out the [online learning pages](./docs/learning-overview.md) suggested articles, videos, webinar recordings and more.
 
 ## SaaS offers
 
@@ -67,30 +67,9 @@ This sample shows how to build a Virtual Machine for Linux or Windows and demons
 
 - [HubSpot Integration](https://github.com/santhoshb-msft/amp-leadgen2hubspot)
 
-## References and resources
+## Online learning resources
 
-- Azure virtual machine offers
-  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-virtual-machines)
-  - [Technical assets](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
-  - [Simple Azure Marketplace Virtual Machine Offer: creating VM images and publishing in Partner Center](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/simple-azure-marketplace-virtual-machine-offer-creating-vm/ba-p/2058093)
-
-- Azure application offers - Solution Template Offers
-  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/plan-azure-application-offer)
-  - [Azure QuickStart Templates](https://github.com/github/azure-quickstart-templates)
-  - [MS Build 2018 Presentation: Building Solution Templates and Managed Applications for the Azure Marketplace](https://channel9.msdn.com/Events/Build/2018/BRK3603)
-  
-- Azure application offers - Azure managed applications
-  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
-  - [Simple Azure Managed Application: creating, testing, and publishing in Partner Center](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/simple-azure-managed-application-creating-testing-and-publishing/ba-p/2071773)
-
-- SaaS offers
-  - [Overview](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
-  - [Fulfillment APIs version 2 reference](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2)
-- [Marketplace metering service API reference](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/marketplace-metering-service-apis)
-
-## Online learning
-
-Online learning resources to include articles, webinars, videos and more [are located here](./docs/learning-overview.md).
+  [Online learning resources](./docs/learning-overview.md) are available to include key articles, webinars, videos and more.
 
 
 
