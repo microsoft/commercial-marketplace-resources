@@ -1,6 +1,6 @@
 # Transactable Offer Types Learning
 
-This page lists the different transactable offer types andlinks to learning resources for each.
+This page lists the different Azure Marketplace transactable offer types and links to learning resources for each.
 
 These are technical learning materials and are intended for a technologist audience.
 
