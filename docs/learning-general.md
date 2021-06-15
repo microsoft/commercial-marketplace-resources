@@ -2,9 +2,9 @@
 
 ## Webinars
 
-Technical webinars for the Azure Marketplace are conducted every 2 weeks. You may [sign up for a live session here](https://microsoftcloudpartner.eventbuilder.com/MarketplaceDeveloperOfficeHours).
-
-For webinar access, you will be asked to register to view the content.
+> Technical webinars for the Azure Marketplace are conducted every 2 weeks. You may [sign up for a live session here](https://microsoftcloudpartner.eventbuilder.com/MarketplaceDeveloperOfficeHours).
+> 
+> For access to previous webinars you will be asked to register to view the content.
 
 [Introduction to Commercial Marketplace transactable offer types](https://microsoftcloudpartner.eventbuilder.com/event/40200): Are you a Microsoft Partner looking to publish your solution on the Microsoft commercial marketplace?  Join the Microsoft Industry Experiences Architect team to discuss what is new in the commercial marketplace, deep dives on a rotating list of developer topics, and live Q&A to answer your technical questions that will help you get your solution published.
 
