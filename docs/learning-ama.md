@@ -18,6 +18,8 @@ The first two videos are meant to be consumed as a pair. Both are described in [
 1. [Creating and testing a simple Azure Managed Application in the developer’s Azure subscription](https://www.youtube.com/watch?v=eCGFmUirLGU)
 2. [Publishing Azure Managed App in Partner Center and testing in end-customer’s Azure subscription](https://www.youtube.com/watch?v=3ODHzEjomro)
 
+[Mastering Azure Managed Applications](https://www.youtube.com/playlist?list=PLmsFUfdnGr3xpz1Q1ExBxj2Dk_dWqzGB6) is an 18-part instructional video series. It is a recording of a full day hands-on workshop held May 11, 2021. The workshop videos have been organized into logical modules to make each one short and digestable, with a specific focus. This is a 100-400 level workshop, so most of your questions about Azure Managed Applications should be answered in this video series. [The labs conducted in the training](http://aka.ms/AMAWorkshopLabs) are available for you to use at anytime.
+
 ## Webinars
 
 > Technical webinars for the Azure Marketplace are conducted every 2 weeks. You may [sign up for a live session here](https://microsoftcloudpartner.eventbuilder.com/MarketplaceDeveloperOfficeHours).
