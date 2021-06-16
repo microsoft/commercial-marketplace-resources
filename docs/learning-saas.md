@@ -14,7 +14,7 @@
 
 ## Webinars
 
-> Technical webinars for the Azure Marketplace are conducted every 2 weeks. You may [sign up for a live session here](https://microsoftcloudpartner.eventbuilder.com/MarketplaceDeveloperOfficeHours): 
+> Technical webinars for the Azure Marketplace are conducted every 2 weeks. You may [sign up for a live session here](https://aka.ms/MarketplaceDeveloperOfficeHours): 
 > 
 > For access to previous webinars you will be asked to register to view the content.
 
