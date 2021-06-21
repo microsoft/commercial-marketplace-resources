@@ -8,16 +8,16 @@
 
 ## Key Documentation
 
-[Home for all Microsoft Commercial Marketplace Documentation](https://docs.microsoft.com/en-us/azure/marketplace/): Learn about the commercial marketplace, an online marketplace for applications and services that let businesses of all sizes offer solutions to customers around the world.
+[Home for all Microsoft Commercial Marketplace Documentation](https://docs.microsoft.com/azure/marketplace/): Learn about the commercial marketplace, an online marketplace for applications and services that let businesses of all sizes offer solutions to customers around the world.
 
 ## Microsoft Learn Courses
 
-[Introduction to the Microsoft commercial marketplace](https://docs.microsoft.com/en-us/learn/modules/intro-commercial-marketplace/):
+[Introduction to the Microsoft commercial marketplace](https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/):
 Overview of the Microsoft commercial marketplace, including Microsoft AppSource, Azure Marketplace, offer types, and Marketplace Rewards.
 
-[Go to market through the commercial marketplace](https://docs.microsoft.com/en-us/learn/modules/go-to-market-commercial-marketplace/): This module provides tips and best practices to help you create your organization's unique plan for success in the commercial marketplace.
+[Go to market through the commercial marketplace](https://docs.microsoft.com/learn/modules/go-to-market-commercial-marketplace/): This module provides tips and best practices to help you create your organization's unique plan for success in the commercial marketplace.
 
-[Simplify cloud procurement and governance with Azure Marketplace](https://docs.microsoft.com/en-us/learn/modules/simplify-cloud-procurement-governance-azure-marketplace/): Overview of using Azure Marketplace for cloud procurement and governance for customers.
+[Simplify cloud procurement and governance with Azure Marketplace](https://docs.microsoft.com/learn/modules/simplify-cloud-procurement-governance-azure-marketplace/): Overview of using Azure Marketplace for cloud procurement and governance for customers.
 
 ## Webinars
 
