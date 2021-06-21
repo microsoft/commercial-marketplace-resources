@@ -9,14 +9,14 @@
 
 ## Key Documentation
 
-  - [Plan a virtual machine offer](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-virtual-machines)
-  - [Create a virtual machine using an approved base](https://docs.microsoft.com/en-us/azure/marketplace/azure-vm-create-using-approved-base)
-  - [Create a virtual machine using your own image](https://docs.microsoft.com/en-us/azure/marketplace/azure-vm-create-using-own-image)
-  - [Troubleshoot virtual machine certification](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
+  - [Plan a virtual machine offer](https://docs.microsoft.com/azure/marketplace/marketplace-virtual-machines)
+  - [Create a virtual machine using an approved base](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-approved-base)
+  - [Create a virtual machine using your own image](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-own-image)
+  - [Troubleshoot virtual machine certification](https://docs.microsoft.com/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
   
 ## Microsoft Learn Courses
 
-[Create a virtual machine offer for the commercial marketplace](https://docs.microsoft.com/en-us/learn/modules/create-vm-offer-commercial-marketplace/):
+[Create a virtual machine offer for the commercial marketplace](https://docs.microsoft.com/learn/modules/create-vm-offer-commercial-marketplace/):
 This module provides a high-level overview of VM offers in the commercial marketplace.
 
 ## Instructional Videos
