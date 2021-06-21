@@ -3,6 +3,7 @@
 **Table of Contents**
 
 - [Key Documentation](#key-documentation)
+- [Microsoft Learn Courses](#microsoft-learn-courses)
 - [Instructional Videos](#instructional-videos)
 - [Recorded webinars](#webinars)
 
@@ -13,6 +14,11 @@
   - [Create a virtual machine using your own image](https://docs.microsoft.com/en-us/azure/marketplace/azure-vm-create-using-own-image)
   - [Troubleshoot virtual machine certification](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
   
+## Microsoft Learn Courses
+
+[Create a virtual machine offer for the commercial marketplace](https://docs.microsoft.com/en-us/learn/modules/create-vm-offer-commercial-marketplace/):
+This module provides a high-level overview of VM offers in the commercial marketplace.
+
 ## Instructional Videos
 
 The following two videos show two different ways of publishing a Virtual Machine on the Azure Marketplace. Both are described in [this blog post](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/simple-azure-marketplace-virtual-machine-offer-creating-vm/ba-p/2058093). The recommended technique is to use the Azure Shared Image Gallery.
