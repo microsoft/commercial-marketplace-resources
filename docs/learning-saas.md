@@ -3,14 +3,20 @@
 **Table of Contents**
 
 - [Key Documentation](#key-documentation)
+- [Microsoft Learn Courses](#microsoft-learn-courses)
 - [Recorded webinars](#webinars)
 
 ## Key Documentation
 
-- [How to plan a SaaS offer for the commercial marketplace](https://docs.microsoft.com/en-us/azure/marketplace/plan-saas-offer)
-- [Build the landing page for your transactable SaaS offer in the commercial marketplace](https://docs.microsoft.com/en-us/azure/marketplace/azure-ad-transactable-saas-landing-page)
-- [SaaS fulfillment APIs version 2 in the commercial marketplace](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2)
-- [Metered billing for SaaS using the commercial marketplace metering service](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/saas-metered-billing)
+- [How to plan a SaaS offer for the commercial marketplace](https://docs.microsoft.com/azure/marketplace/plan-saas-offer)
+- [Build the landing page for your transactable SaaS offer in the commercial marketplace](https://docs.microsoft.com/azure/marketplace/azure-ad-transactable-saas-landing-page)
+- [SaaS fulfillment APIs version 2 in the commercial marketplace](https://docs.microsoft.com/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2)
+- [Metered billing for SaaS using the commercial marketplace metering service](https://docs.microsoft.com/azure/marketplace/partner-center-portal/saas-metered-billing)
+
+## Microsoft Learn Courses
+
+[Create a SaaS offer for the commercial marketplace](https://docs.microsoft.com/learn/modules/create-saas-offer-commercial-marketplace/):
+This module provides a high-level overview of SaaS offers in the commercial marketplace
 
 ## Webinars
 

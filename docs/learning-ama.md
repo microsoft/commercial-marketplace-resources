@@ -8,8 +8,8 @@
 
 ## Key Documentation
 
-  - [Plan an Azure Application offer for the commercial marketplace](https://docs.microsoft.com/en-us/azure/marketplace/plan-azure-application-offer)
-  - [Publishing guide for Azure managed applications](https://docs.microsoft.com/en-us/azure/marketplace/marketplace-managed-apps)
+  - [Plan an Azure Application offer for the commercial marketplace](https://docs.microsoft.com/azure/marketplace/plan-azure-application-offer)
+  - [Publishing guide for Azure managed applications](https://docs.microsoft.com/azure/marketplace/marketplace-managed-apps)
   
 ## Instructional Videos
 
