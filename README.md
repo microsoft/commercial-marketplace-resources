@@ -57,6 +57,12 @@ There are scenarios when the publisher wants to share a secret during the deploy
 
 [GitHub repo](https://github.com/arsenvlad/azure-managed-app-publisher-secret)
 
+## Azure application offers - Solution Template Offers
+
+- [Overview](https://docs.microsoft.com/en-us/azure/marketplace/plan-azure-application-offer)
+- [Azure QuickStart Templates](https://github.com/github/azure-quickstart-templates)
+- [MS Build 2018 Presentation: Building Solution Templates and Managed Applications for the Azure Marketplace](https://channel9.msdn.com/Events/Build/2018/BRK3603)
+
 ## Azure virtual machine offers
 
 This sample shows how to build a Virtual Machine for Linux or Windows and demonstrates the basic steps required to make the image ready for the Microsoft Commercial Marketplace.
