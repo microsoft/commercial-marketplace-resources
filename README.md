@@ -1,5 +1,4 @@
-# Microsoft Commercial Marketplace samples index
-
+# ![Alt Azure Marketplace shopping bag icon](images/Azure_Store_Marketplace_COLOR.svg "Azure Marketplace icon") Microsoft Commercial Marketplace | Samples Index 
 This is a list of repositories of samples we find useful in understanding Microsoft Commercial Marketplace concepts. Please submit a pull request if there is a sample you have developed, or find that you think that may benefit the community by adding a section under the relevant offer type with a short description and a link to the sample repo.
 
 Likewise, if there is a sample you wish existed, please add it to our [Issues](https://github.com/microsoft/commercial-marketplace-samples/issues).
@@ -30,6 +29,9 @@ There are packages for some client libraries as personal efforts for convenience
 The sample code provides a framework for excercising the commercial marketplace billing system, including the SaaS Fulfillment API (v2) and Marketplace Metering Service API. This sample code demonstrates how a typical SaaS platform interacts with the marketplace APIs in order to provision subscriptions for customers, enable logging, and manage commercial marketplace subscriptions. It provides both a customer registration experience and a web interface for the publisher to manage the customer subscriptions.
 
 [GitHub repo](https://github.com/Azure/Microsoft-commercial-marketplace-transactable-SaaS-offer-SDK)
+
+![Alt SaaS Accelerator Landing Page Image](images/SaaSLandingPage.png "SaaS Accelerator Landing Page")
+![Alt SaaS Accelerator Landing Page Image](images/PublisherLandingPage.png "SaaS Accelerator Landing Page")
 
 ## Azure application offers - Azure managed applications
 
