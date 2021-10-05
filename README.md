@@ -25,18 +25,6 @@ There are packages for some client libraries as personal efforts for convenience
 - Client library for Node.js, https://github.com/microsoft/commercial-marketplace-client-node, [NPMJS- Metering](https://www.npmjs.com/package/microsoft.marketplace.metering), [NPMJS- SaaS](https://www.npmjs.com/package/microsoft.marketplace.saas)
 - Client library for Go (coming soon), https://github.com/microsoft/commercial-marketplace-client-go
 
-### Basic integration and manual onboarding sample (a.k.a. Contoso sample)
-
-Some solutions require out-of-band or manual on-boarding steps, such as validating a customer, running scripts manually for deploying resources needed for a new customer etc. This sample uses email notifications for a new customer, or any changes on the subscription status made outside of the solution code.
-
-[GitHub repo](https://github.com/microsoft/Commercial-Marketplace-SaaS-Manual-On-Boarding)
-
-### Single Page Application sample demonstrating client side Azure Active Directory Single Sign on
-
-This sample addresses a very narrow case to demonstrate the AAD SSO on the client side, with a server side component calling the marketplace APIs.
-
-[GitHub repo](https://github.com/microsoft/commercial-marketplace-saas-spa)
-
 ### Sample for customer registration, provisioning and subscription management (a.k.a. Microsoft Commercial Marketplace transactable SaaS offer SDK)
 
 The sample code provides a framework for excercising the commercial marketplace billing system, including the SaaS Fulfillment API (v2) and Marketplace Metering Service API. This sample code demonstrates how a typical SaaS platform interacts with the marketplace APIs in order to provision subscriptions for customers, enable logging, and manage commercial marketplace subscriptions. It provides both a customer registration experience and a web interface for the publisher to manage the customer subscriptions.
