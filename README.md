@@ -18,7 +18,7 @@ We are using an Open API Specification (OAS) document (previously known as Swagg
 There are packages for some client libraries as personal efforts for convenience, published at the appropriate package repositories. They are listed below. They are unsupported and personal.
 
 - OAS document for Fulfillment API v2 and Metering service API, https://github.com/microsoft/commercial-marketplace-openapi 
-- Client library for .NET, https://github.com/microsoft/commercial-marketplace-client-dotnet, [NuGet](https://www.nuget.org/packages/Ercenk.Microsoft.Marketplace)
+- Client library for .NET, https://github.com/microsoft/commercial-marketplace-client-dotnet, [NuGet](https://www.nuget.org/packages/Marketplace.SaaS.Client)
 - Client library for Java, https://github.com/microsoft/commercial-marketplace-client-java
 - Client library for Python, https://github.com/microsoft/commercial-marketplace-client-python, [PyPi](https://pypi.org/project/azuremarketplace/)
 - Client library for Node.js, https://github.com/microsoft/commercial-marketplace-client-node, [NPMJS- Metering](https://www.npmjs.com/package/microsoft.marketplace.metering), [NPMJS- SaaS](https://www.npmjs.com/package/microsoft.marketplace.saas)
