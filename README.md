@@ -1,14 +1,15 @@
 # ![Alt Azure Marketplace shopping bag icon](images/Azure_Store_Marketplace_COLOR.svg "Azure Marketplace icon") Microsoft Commercial Marketplace | Samples and Learning Resources
 
-This repository provides pointers to repositories and learning resources to help understand the Microsoft commercial marketplace. 
+This repository provides pointers to repositories and learning resources to help understand the Microsoft commercial marketplace. Please submit a pull request if there is a sample you have developed. If there is a sample you wish existed, please add it to our [Issues](https://github.com/microsoft/commercial-marketplace-samples/issues).
 
-Please submit a pull request if there is a sample you have developed. If there is a sample you wish existed, please add it to our [Issues](https://github.com/microsoft/commercial-marketplace-samples/issues).
+Included in this document is technical learning content, links to sample code, reference implementations, webinars, and key documentation. These resources focus on transactable offer types in the Azure marketplace.
 
-Included in this document.
+**Included in this document**
 
 1. [SaaS offers](#saas-offers)
 1. [Virtual Machine offers](#virtual-machine-offers)
 1. [Azure Managed Application offers](#azure-managed-application-offers)
+1. [General marketplace knowledge](#general-marketplace-knowledge)
 
 ## SaaS offers
 
@@ -32,14 +33,13 @@ This library of technical content is designed to help speed your time to publish
 - [SaaS Overview](https://microsoftcloudpartner.eventbuilder.com/event/38107)
 - [Configuring AAD to work with the Azure Marketplace](https://microsoftcloudpartner.eventbuilder.com/event/38110)
 
-#### Microsoft Learn modules
+#### Microsoft Learn courses
 
 - [Create a SaaS offer for the commercial marketplace](https://docs.microsoft.com/learn/modules/create-saas-offer-commercial-marketplace/)
 
 ### Sample projects
 
 - [SaaS Accelerator](https://github.com/Azure/Commercial-Marketplace-SaaS-Accelerator) - A complete reference implementation of a SaaS offer
-
 
 ### Client libraries
 
@@ -63,68 +63,107 @@ The following repositories are not guaranteed through Microsoft support. They ar
 
 ### Learning resources
 
+#### Webinars
+
+> For access to webinar recordings you will be asked to register to view the content.
+
+- [Transactable Virtual Machine Offer Overview](https://microsoftcloudpartner.eventbuilder.com/event/40202)
+- [Building a Virtual Machine offer](https://microsoftcloudpartner.eventbuilder.com/event/38108)
+- [The Virtual Machine Offer Validation Process](https://microsoftcloudpartner.eventbuilder.com/event/39384)
+
+#### Microsoft Learn courses
+
+- [Create a virtual machine offer for the commercial marketplace](https://docs.microsoft.com/learn/modules/create-vm-offer-commercial-marketplace/)
+
+#### Community content - video
+
+- [Create Azure VM image for Azure Marketplace Virtual Machine Offer using Packer with VHD destination](https://www.youtube.com/watch?v=AcsXUuYCvQw)
+- [Creating Azure VM image for Azure Marketplace Virtual Machine Offer using Packer with Azure Shared Image Gallery](https://www.youtube.com/watch?v=FVPiecI5r3s)
+- [Publishing Azure Marketplace Virtual Machine Offer in Partner Center using SAS VHD URL](https://www.youtube.com/watch?v=44v3lseTsP0)
+- [Using Cloud Partner Portal CPP API for managing "Virtual Machine" offers in Azure Marketplace](https://www.youtube.com/watch?v=3LDwrq7a8E8)
+- [Deploying and testing "Preview" Azure VM Offer published in Azure Marketplace](https://youtu.be/BJjdoHAIap8)
+
 ### Sample projects
 
+- [Building a Linux or Windows Virtual Machine for the Azure Marketplace](https://github.com/microsoft/commerical-marketplace-vm-sample)
+- [Marketplace VM Samples with Packer and Terraform](https://github.com/microsoft/commerical-marketplace-vm-sample)
 
+### Key documentation
 
-
+  - [Plan a virtual machine offer](https://docs.microsoft.com/azure/marketplace/marketplace-virtual-machines)
+  - [Create a virtual machine using an approved base](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-approved-base)
+  - [Create a virtual machine using your own image](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-own-image)
+  - [Troubleshoot virtual machine certification](https://docs.microsoft.com/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
+  
 ## Azure Managed Application offers
 
 ### Learning resources
 
-**Mastering the Marketplace learning library**
+#### Mastering the Marketplace learning library
 
-This library of technical content is designed to help speed your time to publish your SaaS offer to the Azure marketplace.
+This library of technical content is designed to help speed your time to publish your Azure Managed Application offer to the Azure marketplace.
 
 - [Mastering Azure Managed Applications](https://github.com/microsoft/Mastering-the-Marketplace/blob/main/ama/README.md)
 
+#### Webinars
+
+> For access to webinar recordings you will be asked to register to view the content.
+
+- [Managed Applications Overview](https://microsoftcloudpartner.eventbuilder.com/event/28512)
+- [Transactable Azure Managed Application Overview](https://microsoftcloudpartner.eventbuilder.com/event/40203)
+- [Walkthrough of publishing an Azure Managed Application (AMA) to Partner Center](https://microsoftcloudpartner.eventbuilder.com/event/42625)
+- [Working with Managed Application package artifacts](https://microsoftcloudpartner.eventbuilder.com/event/43714)
+- [Creating Dynamic UIs for Managed Applications](https://microsoftcloudpartner.eventbuilder.com/event/38112)
+- [Azure Managed Applications and Custom Providers](https://microsoftcloudpartner.eventbuilder.com/event/43703)
+
 ### Sample projects
 
+- [Posting Usage With the Azure Managed Application Metered Billing API](https://github.com/microsoft/commercial-marketplace-managed-application-metering-samples)
+
+### Community content - video
+
+- [Creating and testing a simple Azure Managed Application in the developer’s Azure subscription](https://www.youtube.com/watch?v=eCGFmUirLGU)
+- [Publishing Azure Managed App in Partner Center and testing in end-customer’s Azure subscription](https://www.youtube.com/watch?v=3ODHzEjomro)
+- [Refreshing Azure Managed Application permissions and using Managed App's Identity](https://www.youtube.com/watch?v=sDjY_mD3fqY)
+- [Adding cross-tenant role assignments for Managed Identity in Azure Managed Application](https://www.youtube.com/watch?v=zAbOlqf21No)
+- [Using Partner Center Ingestion API for managing "Azure Application" offers in Azure Marketplace](https://youtu.be/omEjvvF9g6Y)
+
+### Key documentation
+
+  - [Plan an Azure Application offer for the commercial marketplace](https://docs.microsoft.com/azure/marketplace/plan-azure-application-offer)
+  - [Publishing guide for Azure managed applications](https://docs.microsoft.com/azure/marketplace/marketplace-managed-apps)
+
+## General marketplace knowledge
+
+### Sample projects
+
+- [HubSpot CRM Integration](https://github.com/santhoshb-msft/amp-leadgen2hubspot)
+
+### Webinars
+
+> For access to previous webinars you will be asked to register to view the content.
+
+- [Introduction to Commercial Marketplace transactable offer types](https://microsoftcloudpartner.eventbuilder.com/event/40200)
+- [Developing for commercial marketplace](https://microsoftcloudpartner.eventbuilder.com/event/32337): Join the Microsoft Architect team to discuss what is new in the Commercial Marketplace, deep dives on a rotating list of developer topics, and live Q&A to help you get your solution published.
+- [Transactable Offer Types](https://microsoftcloudpartner.eventbuilder.com/event/38053)
+- [Common Consumption Meters for Azure Marketplace](https://microsoftcloudpartner.eventbuilder.com/event/28507)
+
+### Microsoft Learn content
+
+- [Introduction to the Microsoft commercial marketplace](https://docs.microsoft.com/learn/modules/intro-commercial-marketplace/)
+- [Go to market through the commercial marketplace](https://docs.microsoft.com/learn/modules/go-to-market-commercial-marketplace/)
+- [Simplify cloud procurement and governance with Azure Marketplace](https://docs.microsoft.com/learn/modules/simplify-cloud-procurement-governance-azure-marketplace/)
+
+### Key links and documentation
+
+- [Join the Microsoft Partner Network](https://partner.microsoft.com/en-us/dashboard/account/v3/enrollment/introduction/partnership)
+- [Partner Center](https://partner.microsoft.com/dashboard) (You must be a Microsoft partner and have an account)
+- [Microsoft commercial marketplace documentation home](https://docs.microsoft.com/azure/marketplace/)
 
 
 
 
 
-
-
-
-
-
-
-
-## Azure application offers - Azure managed applications
-
-### Custom metering, retrieving "resourceId" for a subscription
-
-There are multiple approaches when a managed application needs to post usage to metering service. This set of notes and samples go through those approaches, and explain the relationship between them.
-
-[GitHub repo](https://github.com/microsoft/commercial-marketplace-managed-application-metering-samples)
-
-### Using a secret from the publisher's Azure Key Vault
-
-There are scenarios when the publisher wants to share a secret during the deployment of a Managed Application. This sample demonstrates a technique sharing secrets during the deployment.
-
-[GitHub repo](https://github.com/arsenvlad/azure-managed-app-publisher-secret)
-
-## Azure application offers - Solution Template Offers
-
-- [Overview](https://docs.microsoft.com/en-us/azure/marketplace/plan-azure-application-offer)
-- [Azure QuickStart Templates](https://github.com/github/azure-quickstart-templates)
-- [MS Build 2018 Presentation: Building Solution Templates and Managed Applications for the Azure Marketplace](https://channel9.msdn.com/Events/Build/2018/BRK3603)
-
-## Azure virtual machine offers
-
-This sample shows how to build a Virtual Machine for Linux or Windows and demonstrates the basic steps required to make the image ready for the Microsoft Commercial Marketplace.
-
-[GitHub repo](https://github.com/microsoft/commerical-marketplace-vm-sample)
-
-## Lead management integration samples
-
-- [HubSpot Integration](https://github.com/santhoshb-msft/amp-leadgen2hubspot)
-
-## Online learning resources
-
-  [Online learning resources](./docs/learning-overview.md) are available to include key articles, webinars, videos and more.
 
 
 
