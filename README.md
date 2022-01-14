@@ -1,4 +1,4 @@
-# ![Alt Azure Marketplace shopping bag icon](images/Azure_Store_Marketplace_COLOR.svg "Azure Marketplace icon") Microsoft Marketplace | Samples and Resources Index
+# ![Alt Azure Marketplace shopping bag icon](images/Azure_Store_Marketplace_COLOR.svg "Azure Marketplace icon") Microsoft Marketplace Samples and Resources Index
 
 This repository provides pointers to repositories and learning resources to help understand the Microsoft commercial marketplace. Please submit a pull request if there is a sample you have developed. If there is a sample you wish existed, please add it to our [Issues](https://github.com/microsoft/commercial-marketplace-samples/issues).
 
