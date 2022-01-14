@@ -6,7 +6,9 @@ Included in this document is technical learning content, links to sample code, r
 
 **Included in this document**
 
-1. [SaaS offers](#saas-offers)
+- [SaaS offers](#saas-offers)
+  - [Client libraries](#client-libraries)
+  - [Learning resources](#saas-learning-resources)
 1. [Virtual Machine offers](#virtual-machine-offers)
 1. [Azure Managed Application offers](#azure-managed-application-offers)
 1. [General marketplace knowledge](#general-marketplace-knowledge)
@@ -23,6 +25,8 @@ The following repositories are not guaranteed through Microsoft support. They ar
 - Client library for Python | [Repository](https://github.com/microsoft/commercial-marketplace-client-python) | [PyPi](https://pypi.org/project/azuremarketplace/)
 - Client library for Node.js | [Repository](https://github.com/microsoft/commercial-marketplace-client-node) | [NPM for SaaS](https://www.npmjs.com/package/microsoft.marketplace.saas) | [NPM for Metering](https://www.npmjs.com/package/microsoft.marketplace.metering)
 - Client library for Go (coming soon) | [Repository](https://github.com/microsoft/commercial-marketplace-client-go)
+
+<a name="saas-learning-resources"></a>
 
 ### Learning resources
 
