@@ -7,15 +7,16 @@ Included in this document is technical learning content, links to sample code, r
 **Included in this document**
 
 - [SaaS offers](#saas-offers)
-  - [Client libraries](#client-libraries)
+  - [Client libraries](#saas-client-libraries)
   - [Learning resources](#saas-learning-resources)
-1. [Virtual Machine offers](#virtual-machine-offers)
-1. [Azure Managed Application offers](#azure-managed-application-offers)
-1. [General marketplace knowledge](#general-marketplace-knowledge)
+  - [Sample projects](#saas-sample-projects)
+- [Virtual Machine offers](#virtual-machine-offers)
+- [Azure Managed Application offers](#azure-managed-application-offers)
+- [General marketplace knowledge](#general-marketplace-knowledge)
 
 ## SaaS offers
 
-### Client libraries
+### <a name="saas-client-libraries">Client libraries</a>
 
 The following repositories are not guaranteed through Microsoft support. They are intended as samples and reference implementations.
 
@@ -26,9 +27,7 @@ The following repositories are not guaranteed through Microsoft support. They ar
 - Client library for Node.js | [Repository](https://github.com/microsoft/commercial-marketplace-client-node) | [NPM for SaaS](https://www.npmjs.com/package/microsoft.marketplace.saas) | [NPM for Metering](https://www.npmjs.com/package/microsoft.marketplace.metering)
 - Client library for Go (coming soon) | [Repository](https://github.com/microsoft/commercial-marketplace-client-go)
 
-<a name="saas-learning-resources"></a>
-
-### Learning resources
+### <a name="saas-learning-resources">Learning resources</a>
 
 #### Mastering the Marketplace learning library
 
@@ -52,7 +51,7 @@ This library of technical content is designed to help speed your time to publish
 
 - [Create a SaaS offer for the commercial marketplace](https://docs.microsoft.com/learn/modules/create-saas-offer-commercial-marketplace/)
 
-### Sample projects
+### <a name="saas-sample-projects">Sample projects</a>
 
 - [SaaS Accelerator](https://github.com/Azure/Commercial-Marketplace-SaaS-Accelerator) - A complete reference implementation of a SaaS offer
 
