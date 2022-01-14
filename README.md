@@ -1,23 +1,23 @@
-# ![Alt Azure Marketplace shopping bag icon](images/Azure_Store_Marketplace_COLOR.svg "Azure Marketplace icon") Microsoft Marketplace Samples and Resources Index
+# ![Alt Azure Marketplace shopping bag icon](images/Azure_Store_Marketplace_COLOR.svg "Azure Marketplace icon") Microsoft Marketplace | Samples and Resources Index
 
-This repository provides pointers to resources to help you onboard your solution to the Microsoft commercial marketplace. These resources focus on transactable offer types.
+This repository provides pointers to repositories and learning resources to help understand the Microsoft commercial marketplace. Please submit a pull request if there is a sample you have developed. If there is a sample you wish existed, please add it to our [Issues](https://github.com/microsoft/commercial-marketplace-samples/issues).
 
-Included in this document are links to key projects, sample code, technical learning content, reference implementations, and key documentation. 
+Included in this document is technical learning content, links to sample code, reference implementations, webinars, and key documentation. These resources focus on transactable offer types in the Azure marketplace.
 
 **Included in this document**
 
 - [SaaS offers](#saas-offers)
   - [Client libraries](#saas-client-libraries)
-  - [Learning resources](#saas-learning-resources)
   - [Sample projects](#saas-sample-projects)
+  - [Learning resources](#saas-learning-resources)
   - [Key links and documentation](#saas-key-links-and-documentation)
 - [Virtual Machine offers](#virtual-machine-offers)
-  - [Learning resources](#vm-learning-resources)
   - [Sample projects](#vm-sample-projects)
+  - [Learning resources](#vm-learning-resources)
   - [Key links and documentation](#vm-key-links-and-documentation)
 - [Azure Managed Application offers](#azure-managed-application-offers)
-  - [Learning resources](#ama-learning-resources)
   - [Sample projects](#ama-sample-projects)
+  - [Learning resources](#ama-learning-resources)
   - [Key links and documentation](#ama-key-links-and-documentation)
 - [General marketplace knowledge](#general-marketplace-knowledge)
     - [Sample projects](#general-sample-projects)
@@ -36,6 +36,10 @@ The following repositories are not guaranteed through Microsoft support. They ar
 - Client library for Python | [Repository](https://github.com/microsoft/commercial-marketplace-client-python) | [PyPi](https://pypi.org/project/azuremarketplace/)
 - Client library for Node.js | [Repository](https://github.com/microsoft/commercial-marketplace-client-node) | [NPM for SaaS](https://www.npmjs.com/package/microsoft.marketplace.saas) | [NPM for Metering](https://www.npmjs.com/package/microsoft.marketplace.metering)
 - Client library for Go (coming soon) | [Repository](https://github.com/microsoft/commercial-marketplace-client-go)
+
+### <a name="saas-sample-projects">Sample projects</a>
+
+- [SaaS Accelerator](https://github.com/Azure/Commercial-Marketplace-SaaS-Accelerator) - A complete reference implementation of a SaaS offer you can use to jumpstart your SaaS solution into the Azure marketplace
 
 ### <a name="saas-learning-resources">Learning resources</a>
 
@@ -61,9 +65,7 @@ This library of technical content is designed to help speed your time to publish
 
 - [Create a SaaS offer for the commercial marketplace](https://docs.microsoft.com/learn/modules/create-saas-offer-commercial-marketplace/)
 
-### <a name="saas-sample-projects">Sample projects</a>
 
-- [SaaS Accelerator](https://github.com/Azure/Commercial-Marketplace-SaaS-Accelerator) - A complete reference implementation of a SaaS offer
 
 ### <a name="saas-key-links-and-documentation">Key links and documentation</a>
 
@@ -74,7 +76,16 @@ This library of technical content is designed to help speed your time to publish
 
 ## Virtual Machine offers
 
+### <a name="vm-sample-projects">Sample projects</a>
+
+- [Building a Linux or Windows Virtual Machine for the Azure Marketplace](https://github.com/microsoft/commerical-marketplace-vm-sample)
+- [Marketplace VM Samples with Packer and Terraform](https://github.com/microsoft/commerical-marketplace-vm-sample)
+
 ### <a name="vm-learning-resources">Learning resources</a>
+
+#### Microsoft Learn courses
+
+- [Create a virtual machine offer for the commercial marketplace](https://docs.microsoft.com/learn/modules/create-vm-offer-commercial-marketplace/)
 
 #### Webinars
 
@@ -84,22 +95,16 @@ This library of technical content is designed to help speed your time to publish
 - [Building a Virtual Machine offer](https://microsoftcloudpartner.eventbuilder.com/event/38108)
 - [The Virtual Machine Offer Validation Process](https://microsoftcloudpartner.eventbuilder.com/event/39384)
 
-#### Microsoft Learn courses
-
-- [Create a virtual machine offer for the commercial marketplace](https://docs.microsoft.com/learn/modules/create-vm-offer-commercial-marketplace/)
-
 #### Community content
 
-- [Create Azure VM image for Azure Marketplace Virtual Machine Offer using Packer with VHD destination](https://www.youtube.com/watch?v=AcsXUuYCvQw)
-- [Creating Azure VM image for Azure Marketplace Virtual Machine Offer using Packer with Azure Shared Image Gallery](https://www.youtube.com/watch?v=FVPiecI5r3s)
-- [Publishing Azure Marketplace Virtual Machine Offer in Partner Center using SAS VHD URL](https://www.youtube.com/watch?v=44v3lseTsP0)
-- [Using Cloud Partner Portal CPP API for managing "Virtual Machine" offers in Azure Marketplace](https://www.youtube.com/watch?v=3LDwrq7a8E8)
-- [Deploying and testing "Preview" Azure VM Offer published in Azure Marketplace](https://youtu.be/BJjdoHAIap8)
+- [Video: Create Azure VM image for Azure Marketplace Virtual Machine Offer using Packer with VHD destination](https://www.youtube.com/watch?v=AcsXUuYCvQw)
+- [Video: Creating Azure VM image for Azure Marketplace Virtual Machine Offer using Packer with Azure Shared Image Gallery](https://www.youtube.com/watch?v=FVPiecI5r3s)
+- [Video: Publishing Azure Marketplace Virtual Machine Offer in Partner Center using SAS VHD URL](https://www.youtube.com/watch?v=44v3lseTsP0)
+- [Video: Using Cloud Partner Portal CPP API for managing "Virtual Machine" offers in Azure Marketplace](https://www.youtube.com/watch?v=3LDwrq7a8E8)
+- [Video: Deploying and testing "Preview" Azure VM Offer published in Azure Marketplace](https://youtu.be/BJjdoHAIap8)
+- [Lab: Publish a VM Offer](https://www.azurecitadel.com/marketplace/vmoffer/): An end to end walkthrough of building a VM Offer from creating the technical assets to publishing in Partner Center.
 
-### <a name="vm-sample-projects">Sample projects</a>
 
-- [Building a Linux or Windows Virtual Machine for the Azure Marketplace](https://github.com/microsoft/commerical-marketplace-vm-sample)
-- [Marketplace VM Samples with Packer and Terraform](https://github.com/microsoft/commerical-marketplace-vm-sample)
 
 ### <a name="vm-key-links-and-documentation">Key links and documentation</a>
 
@@ -109,6 +114,10 @@ This library of technical content is designed to help speed your time to publish
   - [Troubleshoot virtual machine certification](https://docs.microsoft.com/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
   
 ## Azure Managed Application offers
+
+### <a name="ama-sample-projects">Sample projects</a>
+
+- [Posting Usage With the Azure Managed Application Metered Billing API](https://github.com/microsoft/commercial-marketplace-managed-application-metering-samples)
 
 ### <a name="ama-learning-resources">Learning resources</a>
 
@@ -138,11 +147,6 @@ This library of technical content is designed to help speed your time to publish
 - [Adding cross-tenant role assignments for Managed Identity in Azure Managed Application](https://www.youtube.com/watch?v=zAbOlqf21No)
 - [Using Partner Center Ingestion API for managing "Azure Application" offers in Azure Marketplace](https://youtu.be/omEjvvF9g6Y)
 
-### <a name="ama-sample-projects">Sample projects</a>
-
-- [Posting Usage With the Azure Managed Application Metered Billing API](https://github.com/microsoft/commercial-marketplace-managed-application-metering-samples)
-
-
 ### <a name="ama-key-links-and-documentation">Key links and documentation</a>
 
   - [Plan an Azure Application offer for the commercial marketplace](https://docs.microsoft.com/azure/marketplace/plan-azure-application-offer)
@@ -153,10 +157,6 @@ This library of technical content is designed to help speed your time to publish
 ### <a name="general-sample-projects">Sample projects</a>
 
 - [HubSpot CRM Integration](https://github.com/santhoshb-msft/amp-leadgen2hubspot)
-
-
-
-
 
 ### <a name="general-learning-resources">Learning resources</a>
 
@@ -187,8 +187,3 @@ This library of technical content is designed to help speed your time to publish
 
 
 
-## Community content
-
-- [Building a Virtual Machine offer](https://microsoftcloudpartner.eventbuilder.com/event/38108): In this session, we will cover how to build and test a Virtual Machine offer for the Azure Marketplace. This includes pointers to example implementations of building images.
-- [VM Content and Metadata Validation Process](https://microsoftcloudpartner.eventbuilder.com/event/39384): Becky Gaudet will explain how Azure Virtual Machine offer content and metadata validation works. She will focus on common issues seen by the validation team. She will also explain the process and highlight any recent changes to the VM validation process. 
-- [Lab: Publish a VM Offer](https://www.azurecitadel.com/marketplace/vmoffer/): An end to end walkthrough of building a VM Offer from creating the technical assets to publishing in Partner Center.
