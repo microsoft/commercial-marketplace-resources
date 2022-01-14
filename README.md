@@ -1,8 +1,8 @@
 # ![Alt Azure Marketplace shopping bag icon](images/Azure_Store_Marketplace_COLOR.svg "Azure Marketplace icon") Microsoft Marketplace Samples and Resources Index
 
-This repository provides pointers to repositories and learning resources to help understand the Microsoft commercial marketplace. Please submit a pull request if there is a sample you have developed. If there is a sample you wish existed, please add it to our [Issues](https://github.com/microsoft/commercial-marketplace-samples/issues).
+This repository provides pointers to resources to help you onboard your solution to the Microsoft commercial marketplace. These resources focus on transactable offer types in the Microsoft commercial marketplace.
 
-Included in this document is technical learning content, links to sample code, reference implementations, webinars, and key documentation. These resources focus on transactable offer types in the Azure marketplace.
+Included in this document are links to sample code, technical learning content, reference implementations, and key documentation. 
 
 **Included in this document**
 
