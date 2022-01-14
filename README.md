@@ -1,4 +1,4 @@
-# ![Alt Azure Marketplace shopping bag icon](images/Azure_Store_Marketplace_COLOR.svg "Azure Marketplace icon") Microsoft Commercial Marketplace | Samples and Learning Resources
+# ![Alt Azure Marketplace shopping bag icon](images/Azure_Store_Marketplace_COLOR.svg "Azure Marketplace icon") Microsoft Marketplace | Samples and Resources Index
 
 This repository provides pointers to repositories and learning resources to help understand the Microsoft commercial marketplace. Please submit a pull request if there is a sample you have developed. If there is a sample you wish existed, please add it to our [Issues](https://github.com/microsoft/commercial-marketplace-samples/issues).
 
@@ -90,8 +90,6 @@ This library of technical content is designed to help speed your time to publish
 
 #### Community content
 
-**Video**
-
 - [Create Azure VM image for Azure Marketplace Virtual Machine Offer using Packer with VHD destination](https://www.youtube.com/watch?v=AcsXUuYCvQw)
 - [Creating Azure VM image for Azure Marketplace Virtual Machine Offer using Packer with Azure Shared Image Gallery](https://www.youtube.com/watch?v=FVPiecI5r3s)
 - [Publishing Azure Marketplace Virtual Machine Offer in Partner Center using SAS VHD URL](https://www.youtube.com/watch?v=44v3lseTsP0)
@@ -133,8 +131,6 @@ This library of technical content is designed to help speed your time to publish
 
 
 #### Community content
-
-**Video**
 
 - [Creating and testing a simple Azure Managed Application in the developer’s Azure subscription](https://www.youtube.com/watch?v=eCGFmUirLGU)
 - [Publishing Azure Managed App in Partner Center and testing in end-customer’s Azure subscription](https://www.youtube.com/watch?v=3ODHzEjomro)
