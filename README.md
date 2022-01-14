@@ -157,6 +157,7 @@ This library of technical content is designed to help speed your time to publish
 ### Key links and documentation
 
 - [Join the Microsoft Partner Network](https://partner.microsoft.com/en-us/dashboard/account/v3/enrollment/introduction/partnership)
+- [Create a commercial marketplace account in Partner Center](https://docs.microsoft.com/en-us/azure/marketplace/create-account)
 - [Partner Center](https://partner.microsoft.com/dashboard) (You must be a Microsoft partner and have an account)
 - [Microsoft commercial marketplace documentation home](https://docs.microsoft.com/azure/marketplace/)
 
