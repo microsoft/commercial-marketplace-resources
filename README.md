@@ -2,7 +2,7 @@
 
 This repository provides pointers to resources to help you onboard your solution to the Microsoft commercial marketplace. These resources focus on transactable offer types in the Microsoft commercial marketplace.
 
-Included in this document are links to sample code, technical learning content, reference implementations, and key documentation. 
+Included in this document are links to key projects, sample code, technical learning content, reference implementations, and key documentation. 
 
 **Included in this document**
 
