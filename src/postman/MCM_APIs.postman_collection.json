@@ -1,0 +1,1219 @@
+{
+	"info": {
+		"_postman_id": "68bc1de2-5723-49f1-aadb-cf677c1cb916",
+		"name": "MCM APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SaaS Fulfillment",
+			"item": [
+				{
+					"name": "Resolve subscription",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.environment.set(\"subscriptionId\", responseJson.id);\r",
+									"\r",
+									"pm.test(\"Status 200 test\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Set subscriptionId\", function () {\r",
+									"    pm.expect(pm.environment.get(\"subscriptionId\")).to.be.a(\"string\");\r",
+									"    pm.expect(responseJson.id).to.eql(pm.environment.get(\"subscriptionId\"));\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-ms-marketplace-token",
+								"value": "{{marketplaceToken}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/resolve?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"resolve"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activate subscription",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"planId\": \"gold\"\n}"
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/{{subscriptionId}}/activate?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"{{subscriptionId}}",
+								"activate"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a subscription",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/{{subscriptionId}}?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"{{subscriptionId}}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all subscriptions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://saasapi.azure.com/api/saas/subscriptions/?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"saasapi",
+								"azure",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								""
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unsubscribe subscription",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/{{subscriptionId}}?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"{{subscriptionId}}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List available plans",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/{{subscriptionId}}/listAvailablePlans?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"{{subscriptionId}}",
+								"listAvailablePlans"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update subscription quantity",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"quantity\": \"5\"\n}"
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/{{subscriptionId}}?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"{{subscriptionId}}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update subscription plan",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"planId\": \"ec-saas-demo-silver\"\r\n}"
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/{{subscriptionId}}?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"{{subscriptionId}}"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SaaS Metering",
+			"item": [
+				{
+					"name": "Post a single usage event",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var now = new Date();\r",
+									"var hourOffset = 1;\r",
+									"now.setHours(now.getHours() - hourOffset);\r",
+									"pm.environment.set(\"utcNowMinus2Hrs\", now.toISOString());\r",
+									"\r",
+									"console.log(pm.environment.get(\"utcNowMinus2Hrs\"));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"resourceId\": \"{{subscriptionId}}\",\n    \"quantity\": 100,\n    \"dimension\": \"scan_1_page\",\n    \"effectiveStartTime\": \"{{utcNowMinus2Hrs}}\",\n    \"planId\": \"ec-saas-demo-platinum\"\n}"
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/usageEvent?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"usageEvent"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}",
+									"description": "(Required) Version of the API."
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get plan-a single usage event",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var now = new Date();\r",
+									"now.setHours(now.getHours() - 4);\r",
+									"pm.environment.set(\"utcNowMinus2Hrs\", now.toISOString());\r",
+									"\r",
+									"console.log(pm.environment.get(\"utcNowMinus2Hrs\"));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"resourceId\": \"{{subscriptionId}}\",\n    \"quantity\": 100,\n    \"dimension\": \"scan-1-page-01\",\n    \"effectiveStartTime\": \"{{utcNowMinus2Hrs}}\",\n    \"planId\": \"plan-a\"\n}"
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/usageEvent",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"usageEvent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Posts a set of usage events to the marketplace metering service API.",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var now = new Date();\r",
+									"now.setHours(now.getHours() - 2);\r",
+									"\r",
+									"pm.environment.set(\"utcNowMinus2Hrs\", now.toISOString());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "A unique string value for tracking the request from the client, preferably a GUID. If this value isn't provided, one will be generated and provided in the response headers.",
+								"key": "x-ms-requestid",
+								"value": "<uuid>"
+							},
+							{
+								"description": "A unique string value for operation on the client. This parameter correlates all events from client operation with events on the server side. If this value isn't provided, one will be generated and provided in the response headers.",
+								"key": "x-ms-correlationid",
+								"value": "<uuid>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"request\":\n[\n\n{\n  \"resourceId\": \"ab8923e0-9ac5-b203-7fac-e23fb89de995\",\n  \"quantity\": 15.5,\n  \"dimension\": \"dim3\",\n  \"effectiveStartTime\": \"{{utcNowMinus2Hrs}}\",\n  \"planId\": \"gold\"\n},\n{\n  \"effectiveStartTime\": \"{{utcNowMinus2Hrs}}\",\n    \"quantity\":  15,\n    \"resourceUri\":  \"/subscriptions/bf7adf12-c3a8-426c-9976-29f145eba70f/resourceGroups/ercmngd/providers/Microsoft.Solutions/applications/ercmdngd2231\",\n    \"dimension\":  \"dim1\",\n    \"planId\":  \"userassigned\"\n}\n]\n}"
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/batchUsageEvent?api-version=2018-08-31",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"batchUsageEvent"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2018-08-31",
+									"description": "(Required) Version of the API."
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Bad request, missing or invalid data provided or expired.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									},
+									{
+										"description": "A unique string value for tracking the request from the client, preferably a GUID. If this value isn't provided, one will be generated and provided in the response headers.",
+										"key": "x-ms-requestid",
+										"value": "<uuid>"
+									},
+									{
+										"description": "A unique string value for operation on the client. This parameter correlates all events from client operation with events on the server side. If this value isn't provided, one will be generated and provided in the response headers.",
+										"key": "x-ms-correlationid",
+										"value": "<uuid>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"resourceId\": \"<uuid>\",\n        \"quantity\": \"<long>\",\n        \"dimension\": \"<string>\",\n        \"effectiveStartTime\": \"<dateTime>\",\n        \"planId\": \"<string>\"\n    }\n]"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/batchUsageEvent?api-version=2018-08-31",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"batchUsageEvent"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "2018-08-31"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "User is unauthorized to make this call.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									},
+									{
+										"description": "A unique string value for tracking the request from the client, preferably a GUID. If this value isn't provided, one will be generated and provided in the response headers.",
+										"key": "x-ms-requestid",
+										"value": "<uuid>"
+									},
+									{
+										"description": "A unique string value for operation on the client. This parameter correlates all events from client operation with events on the server side. If this value isn't provided, one will be generated and provided in the response headers.",
+										"key": "x-ms-correlationid",
+										"value": "<uuid>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"resourceId\": \"<uuid>\",\n        \"quantity\": \"<long>\",\n        \"dimension\": \"<string>\",\n        \"effectiveStartTime\": \"<dateTime>\",\n        \"planId\": \"<string>\"\n    }\n]"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/batchUsageEvent?api-version=2018-08-31",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"batchUsageEvent"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "2018-08-31"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									},
+									{
+										"description": "A unique string value for tracking the request from the client, preferably a GUID. If this value isn't provided, one will be generated and provided in the response headers.",
+										"key": "x-ms-requestid",
+										"value": "<uuid>"
+									},
+									{
+										"description": "A unique string value for operation on the client. This parameter correlates all events from client operation with events on the server side. If this value isn't provided, one will be generated and provided in the response headers.",
+										"key": "x-ms-correlationid",
+										"value": "<uuid>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"resourceId\": \"<uuid>\",\n        \"quantity\": \"<long>\",\n        \"dimension\": \"<string>\",\n        \"effectiveStartTime\": \"<dateTime>\",\n        \"planId\": \"<string>\"\n    }\n]"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/batchUsageEvent?api-version=2018-08-31",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"batchUsageEvent"
+									],
+									"query": [
+										{
+											"key": "api-version",
+											"value": "2018-08-31"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"usageEventId\": \"urn:uuid:3380ab25-d977-d99a-c545-bf1790aab81e\",\n  \"status\": \"Error\",\n  \"messageTime\": \"1985-11-28T11:21:12.458Z\",\n  \"resourceId\": \"95087b56-597d-5b23-d3cd-8a8bfcb04d80\",\n  \"quantity\": 10507292,\n  \"dimension\": \"esse pariatur ex\",\n  \"effectiveStartTime\": \"1994-09-25T23:56:07.261Z\",\n  \"planId\": \"ad aute incididunt ut fugiat\"\n },\n {\n  \"usageEventId\": \"urn:uuid:12f933c8-3c29-61be-d5ed-e3517e6c5950\",\n  \"status\": \"Error\",\n  \"messageTime\": \"2000-05-13T11:17:31.369Z\",\n  \"resourceId\": \"bf80c6bb-c968-3900-59f8-6ec3786c90e3\",\n  \"quantity\": 98012381,\n  \"dimension\": \"dolor dolore culpa\",\n  \"effectiveStartTime\": \"1992-04-16T01:45:57.440Z\",\n  \"planId\": \"nostrud Lorem do dolore in\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Post usage event with resourceUri",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var now = new Date();\r",
+									"now.setHours(now.getHours() - 2);\r",
+									"\r",
+									"pm.collectionVariables.set(\"utcNowMinus2Hrs\", now.toISOString());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"type": "text",
+								"value": "Bearer {{accessToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-ms-requestid",
+								"type": "text",
+								"value": "{{$guid}}"
+							},
+							{
+								"key": "x-ms-correlationid",
+								"type": "text",
+								"value": "{{$guid}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"effectiveStartTime\": \"{{utcNowMinus2Hrs}}\",\r\n    \"quantity\": 15,\r\n    \"resourceUri\": \"/subscriptions/bf7adf12-c3a8-426c-9976-29f145eba70f/resourceGroups/ercmngd/providers/Microsoft.Solutions/applications/ercmdngd2231\",\r\n    \"dimension\": \"dim1\",\r\n    \"planId\": \"userassigned\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/usageEvent?api-version=2018-08-31",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"usageEvent"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2018-08-31"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SaaS Webhook Invoke",
+			"item": [
+				{
+					"name": "Unsubscribe",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"bd104ff5-5f17-4a44-8459-9199b32df64b\",\n  \"activityId\": \"a32fdf02-bd4e-4796-b64b-936aec7cd10d\",\n  \"publisherId\": \"elegantcodecom1583941477217\",\n  \"offerId\": \"ec-saas-demo-preview\",\n  \"planId\": \"ec-saas-demo-gold\",\n  \"quantity\": 1,\n  \"subscriptionId\": \"ee7f24cf-4c42-49df-c652-81619bba9c6c\",\n  \"timeStamp\": \"2021-10-11T00:04:02.3974625Z\",\n  \"action\": \"Unsubscribe\",\n  \"status\": \"Succeeded\",\n  \"operationRequestSource\": \"Azure\",\n  \"subscription\": {\n    \"id\": \"ee7f24cf-4c42-49df-c652-81619bba9c6c\",\n    \"publisherId\": \"elegantcodecom1583941477217\",\n    \"offerId\": \"ec-saas-demo-preview\",\n    \"name\": \"saasdemo4\",\n    \"saasSubscriptionStatus\": \"Unsubscribed\",\n    \"beneficiary\": {\n      \"emailId\": \"dastarr@microsoft.com\",\n      \"objectId\": \"dc737d94-818b-466d-936e-41b5620fd35a\",\n      \"tenantId\": \"e6c97eb2-054c-4b5d-9a30-a064766a9e83\",\n      \"puid\": \"10033FFFA978BA17\",\n      \"groupIds\": null,\n      \"iss\": null,\n      \"idp\": null,\n      \"altsecid\": null,\n      \"CLIENT-IP\": null\n    },\n    \"purchaser\": {\n      \"emailId\": \"dastarr@microsoft.com\",\n      \"objectId\": \"dc737d94-818b-466d-936e-41b5620fd35a\",\n      \"tenantId\": \"e6c97eb2-054c-4b5d-9a30-a064766a9e83\",\n      \"puid\": \"10033FFFA978BA17\",\n      \"groupIds\": null,\n      \"iss\": null,\n      \"idp\": null,\n      \"altsecid\": null,\n      \"CLIENT-IP\": null\n    },\n    \"planId\": \"ec-saas-demo-gold\",\n    \"term\": {\n      \"startDate\": \"2021-10-06T00:00:00Z\",\n      \"endDate\": \"2021-11-05T00:00:00Z\",\n      \"termUnit\": \"P1M\",\n      \"chargeDuration\": null\n    },\n    \"autoRenew\": false,\n    \"isTest\": false,\n    \"isFreeTrial\": false,\n    \"allowedCustomerOperations\": [\n      \"Delete\",\n      \"Update\",\n      \"Read\"\n    ],\n    \"sessionId\": null,\n    \"fulfillmentId\": null,\n    \"legacySubscriptionId\": null,\n    \"sandboxType\": \"None\",\n    \"created\": \"2021-10-06T19:01:05.8649252Z\",\n    \"lastModified\": \"0001-01-01T00:00:00\",\n    \"isBlending\": null,\n    \"tags\": null,\n    \"quantity\": null,\n    \"sessionMode\": \"None\"\n  },\n  \"purchaseToken\": null\n}"
+						},
+						"url": {
+							"raw": "{{webhookHost}}/api/Webhook?top_secret=9b18c5b7-5f99-4e2d-9c11-edf20cbeeb4c",
+							"host": [
+								"{{webhookHost}}"
+							],
+							"path": [
+								"api",
+								"Webhook"
+							],
+							"query": [
+								{
+									"key": "top_secret",
+									"value": "9b18c5b7-5f99-4e2d-9c11-edf20cbeeb4c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ChangePlan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"51b4f69f-8bc4-4b76-9bc8-ab0b99930a35\",\r\n    \"activityId\": \"81c43547-3525-44d9-bdb2-c62dfc8b4777\",\r\n    \"publisherId\": \"elegantcodecom1583941477217\",\r\n    \"offerId\": \"ec-saas-demo-preview\",\r\n    \"planId\": \"ec-saas-demo-gold\",\r\n    \"quantity\": 1,\r\n    \"subscriptionId\": \"ae2559cc-4bb5-4dd8-dbf6-d68be7bedd88\",\r\n    \"timeStamp\": \"2021-10-28T16:57:21.3061903Z\",\r\n    \"action\": \"ChangePlan\",\r\n    \"status\": \"InProgress\",\r\n    \"operationRequestSource\": \"Azure\",\r\n    \"subscription\": {\r\n        \"id\": \"ae2559cc-4bb5-4dd8-dbf6-d68be7bedd88\",\r\n        \"publisherId\": \"elegantcodecom1583941477217\",\r\n        \"offerId\": \"ec-saas-demo-preview\",\r\n        \"name\": \"ssasdemo14\",\r\n        \"saasSubscriptionStatus\": \"Subscribed\",\r\n        \"beneficiary\": {\r\n            \"emailId\": \"dastarr@microsoft.com\",\r\n            \"objectId\": \"dc737d94-818b-466d-936e-41b5620fd35a\",\r\n            \"tenantId\": \"e6c97eb2-054c-4b5d-9a30-a064766a9e83\",\r\n            \"puid\": \"10033FFFA978BA17\",\r\n            \"groupIds\": null,\r\n            \"iss\": null,\r\n            \"idp\": null,\r\n            \"altsecid\": null,\r\n            \"CLIENT-IP\": null\r\n        },\r\n        \"purchaser\": {\r\n            \"emailId\": \"dastarr@microsoft.com\",\r\n            \"objectId\": \"dc737d94-818b-466d-936e-41b5620fd35a\",\r\n            \"tenantId\": \"e6c97eb2-054c-4b5d-9a30-a064766a9e83\",\r\n            \"puid\": \"10033FFFA978BA17\",\r\n            \"groupIds\": null,\r\n            \"iss\": null,\r\n            \"idp\": null,\r\n            \"altsecid\": null,\r\n            \"CLIENT-IP\": null\r\n        },\r\n        \"planId\": \"ec-saas-demo-silver\",\r\n        \"term\": {\r\n            \"startDate\": \"2021-10-20T00:00:00Z\",\r\n            \"endDate\": \"2021-11-19T00:00:00Z\",\r\n            \"termUnit\": \"P1M\",\r\n            \"chargeDuration\": null\r\n        },\r\n        \"autoRenew\": true,\r\n        \"isTest\": false,\r\n        \"isFreeTrial\": false,\r\n        \"allowedCustomerOperations\": [\r\n            \"Delete\",\r\n            \"Update\",\r\n            \"Read\"\r\n        ],\r\n        \"sessionId\": null,\r\n        \"fulfillmentId\": null,\r\n        \"legacySubscriptionId\": null,\r\n        \"sandboxType\": \"None\",\r\n        \"created\": \"2021-10-19T22:56:22.8157297Z\",\r\n        \"lastModified\": \"0001-01-01T00:00:00\",\r\n        \"isBlending\": null,\r\n        \"tags\": null,\r\n        \"quantity\": null,\r\n        \"sessionMode\": \"None\"\r\n    },\r\n    \"purchaseToken\": null\r\n}"
+						},
+						"url": {
+							"raw": "{{webhookHost}}/api/webhook?top_secret=9b18c5b7-5f99-4e2d-9c11-edf20cbeeb4c",
+							"host": [
+								"{{webhookHost}}"
+							],
+							"path": [
+								"api",
+								"webhook"
+							],
+							"query": [
+								{
+									"key": "top_secret",
+									"value": "9b18c5b7-5f99-4e2d-9c11-edf20cbeeb4c"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SaaS Operations",
+			"item": [
+				{
+					"name": "Get all operations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/operations?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"operations"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get operations for a subscription",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/{{subscriptionId}}/operations?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"{{subscriptionId}}",
+								"operations"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an operation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/{{subscriptionId}}/operations/e8a60dda-7836-4757-b1d7-34d74ec66c0e?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"{{subscriptionId}}",
+								"operations",
+								"e8a60dda-7836-4757-b1d7-34d74ec66c0e"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update operation - Succeeded",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"Success\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/{{subscriptionId}}/operations/e8a60dda-7836-4757-b1d7-34d74ec66c0e?api-version={{apiVersion}}",
+							"protocol": "https",
+							"host": [
+								"marketplaceapi",
+								"microsoft",
+								"com"
+							],
+							"path": [
+								"api",
+								"saas",
+								"subscriptions",
+								"{{subscriptionId}}",
+								"operations",
+								"e8a60dda-7836-4757-b1d7-34d74ec66c0e"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "{{apiVersion}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get AccessToken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"pm.environment.set(\"accessToken\", responseJson.access_token);",
+							"",
+							"pm.test(\"Status 200 test\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Set accessToken\", function () {",
+							"    pm.expect(pm.environment.get(\"accessToken\")).to.be.a(\"string\");",
+							"    pm.expect(responseJson.access_token).to.eql(pm.environment.get(\"accessToken\"));",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{clientId}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{clientSecret}}",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "20e940b3-4c77-4b0b-9a53-9e16a1b010a7/.default",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/{{tenantId}}/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"{{tenantId}}",
+						"oauth2",
+						"v2.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "clientId",
+			"value": "......"
+		},
+		{
+			"key": "clientSecret",
+			"value": "......"
+		},
+		{
+			"key": "tenantId",
+			"value": "......"
+		},
+		{
+			"key": "apiVersion",
+			"value": "2018-08-31"
+		},
+		{
+			"key": "utcNowMinus2Hrs",
+			"value": "2021-03-09T14:46:48.437Z"
+		},
+		{
+			"key": "resourceUsageId",
+			"value": "295be254-adf5-a1be-e505-271410253c9e"
+		},
+		{
+			"key": "accessToken",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiIyMGU5NDBiMy00Yzc3LTRiMGItOWE1My05ZTE2YTFiMDEwYTciLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC82ZWJiODY5YS1mMmZjLTQ1NWYtYjNjMy1jODIxNzNkNTU2ZWEvIiwiaWF0IjoxNjE1MzA2Nzc2LCJuYmYiOjE2MTUzMDY3NzYsImV4cCI6MTYxNTMxMDY3NiwiYWlvIjoiRTJaZ1lQRFgveWNXOHFoK1FVamEvN3Y5R244bUFnQT0iLCJhcHBpZCI6IjVmMDZmMGE1LWE4MDQtNGY4MC1hNmRhLTRjMDdmNDM3ZjFhZSIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzZlYmI4NjlhLWYyZmMtNDU1Zi1iM2MzLWM4MjE3M2Q1NTZlYS8iLCJvaWQiOiI3ODUzZmI2Yi00NWRlLTQ4YTUtYmExOS1mYWM1ZTc2ZDBiN2QiLCJyaCI6IjAuQVRZQW1vYTdidnp5WDBXenc4Z2hjOVZXNnFYd0JsOEVxSUJQcHRwTUJfUTM4YTQyQUFBLiIsInN1YiI6Ijc4NTNmYjZiLTQ1ZGUtNDhhNS1iYTE5LWZhYzVlNzZkMGI3ZCIsInRpZCI6IjZlYmI4NjlhLWYyZmMtNDU1Zi1iM2MzLWM4MjE3M2Q1NTZlYSIsInV0aSI6ImJ6dlNPSl92eGsySUxMdzBlOXc4QUEiLCJ2ZXIiOiIxLjAifQ.aTzk3-x4YVkmvEyBNSzgxqjMugoojasp3xCqMBbw6Fl0xGKf55Zz3aU0Rdrj8ByplJNh_ujaKdnb2XPhkTQ2NfswvLwP-N2c1dUwDbfQqElZtgmLYLBf2my_nmOaXG-XVBgZ1MAxeq6NIJuYcMBzX-bNB0ixrxiIlsg7xGFKjlwSZnaWNe50T5bsXbu6r_kYHhdVxMs2QkdioS2sDY719PrTbjZqMN9YSBhUNtEArpPj4BTIj15ejGrdRj4BZA2Oyy9EA1uMTfzxpi-03avPawAcoDyLKqR7rapYtXDk9YIEvGdk5Oz37cvQxMmu5I3Z4YaA9U1BKCWQsNEqeB4dVA"
+		}
+	]
+}
