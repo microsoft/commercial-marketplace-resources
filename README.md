@@ -6,23 +6,35 @@ Included in this document is technical learning content, links to sample code, r
 
 **Included in this document**
 
-- [SaaS offers](#saas-offers)
-  - [Client libraries](#saas-client-libraries)
-  - [Sample projects](#saas-sample-projects)
-  - [Learning resources](#saas-learning-resources)
-  - [Key links and documentation](#saas-key-links-and-documentation)
-- [Virtual Machine offers](#virtual-machine-offers)
-  - [Sample projects](#vm-sample-projects)
-  - [Learning resources](#vm-learning-resources)
-  - [Key links and documentation](#vm-key-links-and-documentation)
-- [Azure Managed Application offers](#azure-managed-application-offers)
-  - [Sample projects](#ama-sample-projects)
-  - [Learning resources](#ama-learning-resources)
-  - [Key links and documentation](#ama-key-links-and-documentation)
-- [General marketplace knowledge](#general-marketplace-knowledge)
-    - [Sample projects](#general-sample-projects)
-    - [Learning resources](#general-learning-resources)
-    - [Key links and documentation](#general-key-links-and-documentation)
+- [!Alt Azure Marketplace shopping bag icon Microsoft Marketplace Resources Index](#-microsoft-marketplace-resources-index)
+  - [SaaS offers](#saas-offers)
+    - [<a name="saas-client-libraries">Client libraries</a>](#client-libraries)
+    - [<a name="saas-sample-projects">Sample projects</a>](#sample-projects)
+    - [<a name="saas-learning-resources">Learning resources</a>](#learning-resources)
+      - [Mastering the Marketplace learning library](#mastering-the-marketplace-learning-library)
+      - [Webinars](#webinars)
+      - [Microsoft Learn courses](#microsoft-learn-courses)
+    - [<a name="saas-key-links-and-documentation">Key links and documentation</a>](#key-links-and-documentation)
+  - [Virtual Machine offers](#virtual-machine-offers)
+    - [<a name="vm-sample-projects">Sample projects</a>](#sample-projects-1)
+    - [<a name="vm-learning-resources">Learning resources</a>](#learning-resources-1)
+      - [Microsoft Learn courses](#microsoft-learn-courses-1)
+      - [Webinars](#webinars-1)
+      - [Community content](#community-content)
+    - [<a name="vm-key-links-and-documentation">Key links and documentation</a>](#key-links-and-documentation-1)
+  - [Azure Managed Application offers](#azure-managed-application-offers)
+    - [<a name="ama-sample-projects">Sample projects</a>](#sample-projects-2)
+    - [<a name="ama-learning-resources">Learning resources</a>](#learning-resources-2)
+      - [Mastering the Marketplace learning library](#mastering-the-marketplace-learning-library-1)
+      - [Webinars](#webinars-2)
+      - [Community content](#community-content-1)
+    - [<a name="ama-key-links-and-documentation">Key links and documentation</a>](#key-links-and-documentation-2)
+  - [General marketplace knowledge](#general-marketplace-knowledge)
+    - [<a name="general-sample-projects">Sample projects</a>](#sample-projects-3)
+    - [<a name="general-learning-resources">Learning resources</a>](#learning-resources-3)
+      - [Webinars](#webinars-3)
+      - [Microsoft Learn content](#microsoft-learn-content)
+    - [<a name="general-key-links-and-documentation">Key links and documentation</a>](#key-links-and-documentation-3)
 
 ## SaaS offers
 
@@ -121,7 +133,7 @@ This library of technical content is designed to help speed your time to publish
 
 ### <a name="ama-sample-projects">Sample projects</a>
 
-- [Posting Usage With the Azure Managed Application Metered Billing API](https://github.com/microsoft/commercial-marketplace-managed-application-metering-samples)
+- [Metered Billing Accelerator](https://github.com/microsoft/commercial-marketplace-ama-metering-accelerator)
 
 ### <a name="ama-learning-resources">Learning resources</a>
 
