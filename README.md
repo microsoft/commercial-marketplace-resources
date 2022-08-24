@@ -6,7 +6,6 @@ Included in this document is technical learning content, links to sample code, r
 
 <!-- no toc -->
 - [SaaS offers](#saas-offers)
-  - [Client libraries](#client-libraries)
   - [Sample projects](#sample-projects)
   - [Learning resources](#learning-resources)
   - [Key links and documentation](#key-links-and-documentation)
