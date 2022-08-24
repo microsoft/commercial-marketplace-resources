@@ -25,7 +25,7 @@ Included in this document is technical learning content, links to sample code, r
 
 ## SaaS offers
 
-### Client libraries
+### Client libraries (In progress)
 
 The following repositories are not guaranteed through Microsoft support. They are intended as samples and reference implementations.
 
