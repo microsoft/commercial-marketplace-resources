@@ -80,12 +80,13 @@ This library of technical content is designed to help speed your time to publish
 
 - [Building a Linux or Windows Virtual Machine for the Azure Marketplace](https://github.com/microsoft/commerical-marketplace-vm-sample)
 - [Marketplace VM Samples with Packer and Terraform](https://github.com/microsoft/commerical-marketplace-vm-sample)
+- [VM Sample with GitHub Actions](https://github.com/microsoft/commercial-marketplace-offer-solution/tree/main/marketplace/virtual-machine/basic-windows-vm)
 
 ### Learning resources
 
 #### Mastering the Marketplace learning library
 
-This library of technical content is designed to help speed your time to publish your virtual machine offer to the Azure marketplace. 
+This library of technical content is designed to help speed your time to publish your virtual machine offer to the Azure marketplace.
 
 [View the course here](https://github.com/microsoft/Mastering-the-Marketplace/tree/main/vm).
 
@@ -118,7 +119,7 @@ This library of technical content is designed to help speed your time to publish
   - [Create a virtual machine using an approved base](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-approved-base)
   - [Create a virtual machine using your own image](https://docs.microsoft.com/azure/marketplace/azure-vm-create-using-own-image)
   - [Troubleshoot virtual machine certification](https://docs.microsoft.com/azure/marketplace/partner-center-portal/vm-certification-issues-solutions)
-  
+
 ## Azure Managed Application offers
 
 ### Sample projects
@@ -187,6 +188,7 @@ This library of technical content is designed to help speed your time to publish
 - [Create a commercial marketplace account in Partner Center](https://docs.microsoft.com/en-us/azure/marketplace/create-account)
 - [Partner Center](https://partner.microsoft.com/dashboard) (You must be a Microsoft partner and have an account)
 - [Microsoft commercial marketplace documentation home](https://docs.microsoft.com/azure/marketplace/)
+- [GitHub commercial marketplace project template](https://github.com/microsoft/commercial-marketplace-offer-solution)
 
 
 
