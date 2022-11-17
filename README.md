@@ -30,7 +30,6 @@ The following repositories are not guaranteed through Microsoft support. They ar
 
 - Client library for .NET | [Repository](https://github.com/microsoft/commercial-marketplace-client-dotnet) | [NuGet](https://www.nuget.org/packages/Marketplace.SaaS.Client)
 - Client library for Java | [Repository](https://github.com/microsoft/commercial-marketplace-client-java)
-- Client library for Node.js | [Repository](https://github.com/microsoft/commercial-marketplace-client-node) | [NPM for SaaS](https://www.npmjs.com/package/microsoft.marketplace.saas) | [NPM for Metering](https://www.npmjs.com/package/microsoft.marketplace.metering)
 
 The following apply to the REST API.
 
