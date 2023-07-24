@@ -39,6 +39,7 @@ The following apply to the REST API.
 ### Sample projects
 
 - [SaaS Accelerator](https://github.com/Azure/Commercial-Marketplace-SaaS-Accelerator) - A complete reference implementation of a SaaS offer you can use to jumpstart your SaaS solution into the Azure marketplace
+- [Commercial Marketplace Solutions](https://github.com/microsoft/commercial-marketplace-solutions) - A set of solutions for various scenarios to do with various offer types.
 
 ### Learning resources
 
@@ -63,8 +64,6 @@ This library of technical content is designed to help speed your time to publish
 #### Microsoft Learn courses
 
 - [Create a SaaS offer for the commercial marketplace](https://docs.microsoft.com/learn/modules/create-saas-offer-commercial-marketplace/)
-
-
 
 ### Key links and documentation
 
@@ -125,6 +124,7 @@ This library of technical content is designed to help speed your time to publish
 
 - [Metered Billing Accelerator](https://github.com/microsoft/commercial-marketplace-ama-metering-accelerator)
 - [Azure App Management Extras](https://github.com/Azure/azure-marketplace-management-extras) - Contains two Azure Function applications designed to help Managed Application solution owners in Partner Centre monitor and manage their deployed apps.
+- [Commercial Marketplace Solutions](https://github.com/microsoft/commercial-marketplace-solutions) - A set of solutions for various scenarios to do with various offer types.
   
 ### Learning resources
 
