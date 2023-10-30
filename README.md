@@ -159,6 +159,24 @@ This library of technical content is designed to help speed your time to publish
   - [Plan an Azure Application offer for the commercial marketplace](https://docs.microsoft.com/azure/marketplace/plan-azure-application-offer)
   - [Publishing guide for Azure managed applications](https://docs.microsoft.com/azure/marketplace/marketplace-managed-apps)
 
+## Azure Container offers for kubernetes apps
+### Sample projects
+- [Azure Vote Code](https://github.com/Azure-Samples/kubernetes-offer-samples)
+- [Azure Managed Application with Container Offer bundle](https://github.com/microsoft/commercial-marketplace-solutions/tree/main/container-offer-samples/container-azure-app-bundle)
+- [Azure Container boilerplate](https://github.com/microsoft/commercial-marketplace-solutions/tree/main/container-offer-samples/container-bolierplate-template)
+- [Azure Container with Custom Meters](https://github.com/microsoft/commercial-marketplace-solutions/tree/main/container-offer-samples/container-custom-meter)
+### Learning resources
+
+#### Mastering the Marketplace learning library
+
+This library of technical content is designed to help speed your time to publish your container offer to the Azure marketplace.
+
+[View the course here](https://microsoft.github.io/Mastering-the-Marketplace/container/).
+
+#### Microsoft Learn courses
+
+- [Create a Container offer for the commercial marketplace](https://learn.microsoft.com/en-us/partner-center/marketplace/azure-container-offer-setup)
+  
 ## General marketplace knowledge
 
 ### Sample projects
